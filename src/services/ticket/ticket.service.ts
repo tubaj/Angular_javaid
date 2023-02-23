@@ -34,7 +34,7 @@ export class TicketService {
 
   
   deleteTicket(ticket: Ticket) {
-		this.index = this.ticketList.indexOf(ticket, 1);
+		this.index = this.ticketList.indexOf(ticket, 0);
 
 		this.ticketList.splice(this.index, 1);
 		this.tickets$.next(this.ticketList);

@@ -5,3 +5,14 @@ export interface Ticket {
   student?: string;
   major?: string;
 }
+
+
+export enum Major {
+    rien = ' ',
+    Maths = 'Maths',
+    SVT = 'SVT',
+    Physique = 'Physique',
+    Art = 'Art',
+}
+
+
