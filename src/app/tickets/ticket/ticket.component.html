@@ -7,6 +7,16 @@
   <button (click)="deleteTicket()">
 		Supprimer ce ticket
 	</button>
+  <br>
+	<button class="btn-custom" (click)="archiveTicket()" *ngIf="ticket.archived == true else showButton">
+		Hide archived ticket 
+	</button>
+
+	<ng-template #showButton>
+		<button class="btn-custom" (click)="archiveTicket()">
+			Show archived ticket 
+		</button>
+	</ng-template>
 
 
 </div>
